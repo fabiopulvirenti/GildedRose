@@ -3,8 +3,6 @@ package com.gildedrose;
 class GildedRose {
     Item[] items;
 
-    private static String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
-    private static String AGED_BRIE =  "Aged Brie";
     private static String SULFURAS = "Sulfuras, Hand of Ragnaros";
 
     public GildedRose(Item[] items) {
