@@ -60,7 +60,7 @@ class GildedRoseTest {
                 new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 10, 30),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 5, 40),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50),
+                new Item("Backstage passes to a TAFKAL80ETC concert", -1, 50),
         };
 
         GildedRose app = new GildedRose(items);
@@ -73,9 +73,9 @@ class GildedRoseTest {
         Assertions.assertEquals(32, items[1].quality);
 
         Assertions.assertEquals(4, items[2].sellIn);
-        Assertions.assertEquals(43, items[2].quality);
+        Assertions.assertEquals(45, items[2].quality);
 
-        Assertions.assertEquals(-1, items[3].sellIn);
+        Assertions.assertEquals(-2, items[3].sellIn);
         Assertions.assertEquals(0, items[3].quality);
 
     }
